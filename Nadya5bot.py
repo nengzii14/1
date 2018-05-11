@@ -18,36 +18,8 @@ nadya.log("Auth Token : " + str(nadya.authToken))
 channelToken = nadya.getChannelResult()
 nadya.log("Channel Token : " + str(channelToken))
 
-ki = LINE()
-#ki = LINE("TOKEN KAMU")
-#ki = LINE("Email","Password")
-ki.log("Auth Token : " + str(ki.authToken))
-channelToken = ki.getChannelResult()
-ki.log("Channel Token : " + str(channelToken))
 
-ki2 = LINE()
-#ki2 = LINE("TOKEN KAMU")
-#ki2 = LINE("Email","Password")
-ki2.log("Auth Token : " + str(ki2.authToken))
-channelToken = ki2.getChannelResult()
-ki2.log("Channel Token : " + str(channelToken))
-
-ki3 = LINE()
-#ki3 = LINE("TOKEN KAMU")
-#ki3 = LINE("Email","Password")
-ki3.log("Auth Token : " + str(ki3.authToken))
-channelToken = ki3.getChannelResult()
-ki3.log("Channel Token : " + str(channelToken))
-
-ki4 = LINE()
-#ki4 = LINE("TOKEN KAMU")
-#ki4 = LINE("Email","Password")
-ki4.log("Auth Token : " + str(ki4.authToken))
-channelToken = ki4.getChannelResult()
-ki4.log("Channel Token : " + str(channelToken))
-
-
-KAC = [nadya,ki,ki2,ki3,ki4]
+KAC = [nadya]
 
 nadyaMID = nadya.profile.mid
 kiMID = ki.profile.mid
@@ -55,34 +27,15 @@ ki2MID = ki2.profile.mid
 ki3MID = ki3.profile.mid
 ki4MID = ki4.profile.mid
 
-Bots = [nadyaMID,kiMID,ki2MID,ki3MID,ki4MID]
+Bots = [nadyaMID]
 creator = ["u14f64e139a3817afaabe27d237afb36b","u92e4326146a0bf296ca15846aa2a25f6"]
 Owner = ["u14f64e139a3817afaabe27d237afb36b"]
 admin = ["u14f64e139a3817afaabe27d237afb36b"]
 
 nadyaProfile = nadya.getProfile()
-kiProfile = ki.getProfile()
-ki2Profile = ki2.getProfile()
-ki3Profile = ki3.getProfile()
-ki4Profile = ki4.getProfile()
-
 lineSettings = nadya.getSettings()
-kiSettings = ki.getSettings()
-ki2Settings = ki2.getSettings()
-ki3Settings = ki3.getSettings()
-ki4Settings = ki4.getSettings()
-
 oepoll = OEPoll(nadya)
-oepoll1 = OEPoll(ki)
-oepoll2 = OEPoll(ki2)
-oepoll3 = OEPoll(ki3)
-oepoll4 = OEPoll(ki4)
-
 responsename = nadya.getProfile().displayName
-responsename2 = ki.getProfile().displayName
-responsename3 = ki2.getProfile().displayName
-responsename4 = ki3.getProfile().displayName
-responsename5 = ki4.getProfile().displayName
 #==============================================================================#
 
 
